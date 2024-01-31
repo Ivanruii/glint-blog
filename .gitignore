@@ -30,6 +30,10 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# lock files
+package-lock.json
+pnpm-lock.yaml
+
 # vercel
 .vercel
 
