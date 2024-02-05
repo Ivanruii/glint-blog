@@ -1,17 +1,10 @@
-import React from "react";
-import { useRouter } from "next/router";
-import { urlForImage } from "../lib/sanity";
 import ErrorPage from "next/error";
-import { Layout } from "./layout";
-import { Container } from "./container";
-import { Header } from "./header";
-import { PostTitle } from "./post-title";
 import Head from "next/head";
+import { useRouter } from "next/router";
+import React from "react";
 import { CMS_NAME } from "../lib/constants";
-import { PostHeader } from "./post-header";
-import { PostBody } from "./post-body";
-import { SectionSeparator } from "./section-separator";
-import { MoreStories } from "./more-stories";
+import { urlForImage } from "../lib/sanity";
+import { Container, Header, Layout, MoreStories, PostBody, PostHeader, PostTitle, SectionSeparator } from "./";
 
 export interface PostProps {
   data?: {

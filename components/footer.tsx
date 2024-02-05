@@ -1,6 +1,6 @@
 import React from "react";
-import { Container } from "./container";
 import { EXAMPLE_PATH } from "../lib/constants";
+import { Container } from "./";
 
 export const Footer: React.FC = () => {
   return (

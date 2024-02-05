@@ -1,7 +1,7 @@
-import React from "react";
 import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 import { urlForImage } from "../lib/sanity";
 
 interface CoverImageProps {

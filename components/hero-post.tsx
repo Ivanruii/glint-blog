@@ -1,8 +1,6 @@
-import React from "react";
-import { Avatar } from "../components/avatar";
-import { Date } from "../components/date";
-import { CoverImage } from "../components/cover-image";
 import Link from "next/link";
+import React from "react";
+import { Avatar, CoverImage, Date } from "./";
 
 interface HeroPostProps {
   title: string;

@@ -1,5 +1,5 @@
 import React from "react";
-import { PostPlug } from "./post-plug";
+import { PostPlug } from "./";
 
 interface MoreStoriesProps {
   posts: {

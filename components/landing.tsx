@@ -1,11 +1,8 @@
-import React from "react";
-import { Layout } from "./layout";
 import Head from "next/head";
+import React from "react";
 import { CMS_NAME } from "../lib/constants";
-import { Container } from "./container";
-import { Intro } from "./intro";
-import { HeroPost } from "./hero-post";
-import { MoreStories } from "./more-stories";
+import { Container, HeroPost, Intro, MoreStories } from "./";
+import { Layout } from "./layout";
 
 interface LandingProps {
   allPosts: any[]; // TODO: Especificar tipos
