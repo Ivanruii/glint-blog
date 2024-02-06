@@ -1,7 +1,7 @@
 import React from "react";
-import { usePreview } from "../lib/sanity";
 import { indexQuery } from "../lib/queries";
-import { Landing } from "./landing";
+import { usePreview } from "../lib/sanity";
+import { Landing } from "./";
 
 interface LandingPreviewProps {
   allPosts: any; // TODO: Especificar tipos

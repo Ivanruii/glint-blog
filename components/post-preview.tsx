@@ -1,7 +1,7 @@
 import React from "react";
-import { usePreview } from "../lib/sanity";
 import { postQuery } from "../lib/queries";
-import { Post } from "./post";
+import { usePreview } from "../lib/sanity";
+import { Post } from "./";
 
 interface PostPreviewProps {
   data: any; // TODO: Especificar tipos

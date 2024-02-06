@@ -1,7 +1,5 @@
 import React from "react";
-import { Alert } from "./alert";
-import { Footer } from "./footer";
-import { Meta } from "./meta";
+import { Alert, Footer, Meta } from "./";
 
 interface LayoutProps {
   preview: boolean;
