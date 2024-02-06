@@ -30,12 +30,12 @@ export const Alert: React.FC<AlertProps> = ({ preview }) => {
             </>
           ) : (
             <>
-              The source code for this blog is{" "}
+              El código fuente de este blog{" "}
               <a
                 href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
                 className="underline transition-colors duration-200 hover:text-success"
               >
-                available on GitHub
+                esta disponible en GitHub
               </a>
               .
             </>
