@@ -13,6 +13,7 @@ interface CoverImageProps {
     };
   };
   priority: boolean | undefined;
+  className?: string; // Nueva propiedad para las clases adicionales
 }
 
 export const CoverImage: React.FC<CoverImageProps> = ({
@@ -20,15 +21,17 @@ export const CoverImage: React.FC<CoverImageProps> = ({
   slug,
   image: source,
   priority,
+  className, // Agregar className a las props
 }) => {
+  const imageClasses = cn(
+    "w-full h-auto shadow-small shadow-slate-300",
+    className
+  );
+
   const image = source?.asset?._ref ? (
-    <div
-      className={cn("shadow-small", {
-        "hover:shadow-medium transition-shadow duration-200": slug,
-      })}
-    >
+    <div>
       <Image
-        className="w-full h-auto"
+        className={imageClasses}
         width={2000}
         height={1000}
         alt={`Cover Image for ${title}`}
@@ -42,7 +45,7 @@ export const CoverImage: React.FC<CoverImageProps> = ({
   );
 
   return (
-    <div className="sm:mx-0">
+    <div className="bg-transparent sm:mx-0">
       {slug ? (
         <Link href={`/posts/${slug}`} aria-label={title}>
           {image}

@@ -12,7 +12,7 @@ export const Layout: React.FC<LayoutProps> = ({ preview, children }) => {
       <Meta />
       <div className="min-h-screen">
         <Alert preview={preview} />
-        <main>{children}</main>
+        <main className="flex m-auto max-w-[120ch]">{children}</main>
       </div>
       <Footer />
     </>

@@ -1,6 +1,5 @@
 import Head from "next/head";
 import React from "react";
-import { CMS_NAME } from "../lib/constants";
 import { Container, HeroPost, Intro, MoreStories } from "./";
 import { Layout } from "./layout";
 
@@ -15,7 +14,7 @@ export const Landing: React.FC<LandingProps> = ({ allPosts, preview }) => {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
+          <title>{`Glint Blog`}</title>
         </Head>
         <Container>
           <Intro />
