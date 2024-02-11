@@ -9,9 +9,10 @@ interface AvatarProps {
       _ref?: string;
     };
   };
+  date?: string;
 }
 
-export const Avatar: React.FC<AvatarProps> = ({ name, picture }) => {
+export const Avatar: React.FC<AvatarProps> = ({ name, picture, date }) => {
   return (
     <div className="flex items-center">
       <div className="relative w-12 h-12 mr-4">
@@ -28,6 +29,7 @@ export const Avatar: React.FC<AvatarProps> = ({ name, picture }) => {
         />
       </div>
       <div className="text-xl font-bold">{name}</div>
+      {date && <div className="text-sm">{date}</div>}
     </div>
   );
 };
