@@ -6,10 +6,11 @@ import { unsplashImageAsset } from "sanity-plugin-asset-source-unsplash";
 import { resolveProductionUrl } from "./resolveProductionUrl";
 import { author } from "./schemas/author";
 import { post } from "./schemas/post";
+import { categories } from "./schemas/categories";
 
 const title =
   import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE ||
-  "Next.js Blog with Sanity.io";
+  "Glint Blog";
 const projectId = import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 const dataset = import.meta.env.NEXT_PUBLIC_SANITY_DATASET;
 
@@ -20,7 +21,7 @@ export default defineConfig({
   title,
   schema: {
     // If you want more content types, you can add them to this array
-    types: [author, post],
+    types: [author, post, categories],
   },
   document: {
     productionUrl: resolveProductionUrl,

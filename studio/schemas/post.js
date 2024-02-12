@@ -23,7 +23,22 @@ export const post = {
       name: "content",
       title: "Content",
       type: "array",
-      of: [{ type: "block" }],
+      of: [
+        { type: "block" },
+        {
+          type: "image",
+          fields: [
+            {
+              name: "caption",
+              title: "Caption",
+              type: "string",
+            },
+          ],
+          options: {
+            hotspot: true,
+          },
+        },
+      ],
     },
     {
       name: "excerpt",
@@ -48,6 +63,12 @@ export const post = {
       title: "Author",
       type: "reference",
       to: [{ type: "author" }],
+    },
+    {
+      name: "categories",
+      title: "Categories",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "category" }] }],
     },
   ],
   preview: {
