@@ -3,6 +3,7 @@ import { PostPlug } from ".";
 
 interface MoreStoriesProps {
   posts: {
+    categories: string[];
     slug: string;
     title: string;
     coverImage: {
@@ -43,6 +44,7 @@ export const MoreStories: React.FC<MoreStoriesProps> = ({ posts }) => {
             author={post.author}
             slug={post.slug}
             excerpt={post.excerpt}
+            categories={post.categories}
           />
         ))}
       </div>

@@ -1,5 +1,6 @@
 export * from './alert';
 export * from './avatar';
+export * from './badge'
 export * from './container';
 export * from './cover-image';
 export * from './date';

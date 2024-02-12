@@ -13,6 +13,7 @@ interface IndexPageProps {
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({ allPosts, preview }) => {
+  console.log(allPosts)
   if (preview) {
     return (
       <PreviewSuspense fallback="Loading...">

@@ -7,12 +7,19 @@ const postFields = `
   coverImage,
   "slug": slug.current,
   "author": author->{name, picture},
+  "categories": categories[]->name
 `;
 
 export const indexQuery: string = `
 *[_type == "post"] | order(date desc, _updatedAt desc) {
   ${postFields}
 }`;
+
+export const categoriesQuery: string = `
+*[_type == "category"] {
+  name
+}
+`;
 
 export const postQuery: string = `
 {
@@ -33,5 +40,4 @@ export const postSlugsQuery: string = `
 export const postBySlugQuery: string = `
 *[_type == "post" && slug.current == $slug][0] {
   ${postFields}
-}
-`;
+}`
