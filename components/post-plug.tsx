@@ -29,7 +29,6 @@ export const PostPlug: React.FC<PostPlugProps> = ({
   coverImage,
   date,
   excerpt,
-  author,
   slug,
   categories
 }) => {
@@ -48,11 +47,11 @@ export const PostPlug: React.FC<PostPlugProps> = ({
           </div>
         </div>
         <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
-
-        {categories && categories.map((category, index) => (
-          <Badge key={index}>{category}</Badge>
-        ))}
-        {/* {author && <Avatar name={author.name} picture={author.picture} />} */}
+        <div className="flex gap-4">
+          {categories && categories.map((category, index) => (
+            <Badge key={index}>{category}</Badge>
+          ))}
+        </div>
       </div>
     </Card>
   );
