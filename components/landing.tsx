@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import { Container, HeroPost, Intro, MoreStories } from "./";
 import { Layout } from "./layout";
+import CookieConsent from "./cookies";
 
 interface LandingProps {
   allPosts: any[]; // TODO: Especificar tipos
@@ -29,6 +30,7 @@ export const Landing: React.FC<LandingProps> = ({ allPosts, preview }) => {
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          <CookieConsent />
         </Container>
       </Layout>
     </>

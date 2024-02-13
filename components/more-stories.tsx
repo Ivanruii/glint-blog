@@ -1,5 +1,6 @@
 import React from "react";
-import { PostPlug } from ".";
+import { PostPlug } from "./";
+import { Button } from "./ui/button";
 
 interface MoreStoriesProps {
   posts: {
@@ -48,14 +49,10 @@ export const MoreStories: React.FC<MoreStoriesProps> = ({ posts }) => {
           />
         ))}
       </div>
+
       {!showAll && posts.length > 6 && (
         <div className="flex justify-center">
-          <button
-            onClick={() => setShowAll(true)}
-            className="flex items-center justify-center px-4 py-2 text-sm font-semibold text-white transition-all bg-gray-500 border-b-4 rounded-lg shadow-lg group h-min disabled:opacity-50 disabled:hover:opacity-50 hover:opacity-95 ring-none font-dm focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 border-b-gray-600 disabled:border-0 disabled:bg-violet-500 disabled:text-white ring-white hover:border-0 active:border-0 hover:text-gray-100 active:bg-white-800 active:text-gray-300 focus-visible:outline-white-500 sm:text-base"
-          >
-            Ver más...
-          </button>
+          <Button onClick={() => setShowAll(true)}>Ver más...</Button>
         </div>
       )}
     </section>
