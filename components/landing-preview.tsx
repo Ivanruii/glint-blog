@@ -1,6 +1,6 @@
 import React from "react";
-import { indexQuery } from "../lib/queries";
-import { usePreview } from "../lib/sanity";
+import { indexQuery } from "@/lib/queries";
+import { usePreview } from "@/lib/sanity";
 import { Landing } from "./";
 
 interface LandingPreviewProps {

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { Avatar, CoverImage, Date } from "./";
+import { Card } from "./ui/card";
+import { Separator } from "@/components/ui/separator"
 
 interface HeroPostProps {
   title: string;
@@ -31,8 +33,8 @@ export const HeroPost: React.FC<HeroPostProps> = ({
   slug,
 }) => {
   return (
-    <section className="flex items-center p-5 border border-gray-300 rounded-2xl">
-      <div className="flex-grow pr-4 border-r border-gray-300">
+    <Card className="flex items-center p-5">
+      <div className="flex-grow pr-4">
         <div className="mb-20 md:mb-28">
           <div className="flex flex-col h-full">
             <div className="flex items-center justify-between">
@@ -53,6 +55,6 @@ export const HeroPost: React.FC<HeroPostProps> = ({
       <div className="pl-4 w-[50%]">
         <CoverImage slug={slug} title={title} image={coverImage} priority />
       </div>
-    </section>
+    </Card>
   );
 };
