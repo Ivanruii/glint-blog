@@ -8,12 +8,11 @@ import React from "react";
 const LandingPreview = lazy(() => import("../components/landing-preview"));
 
 interface IndexPageProps {
-  allPosts: any; // Tipo a definir según la estructura de tus datos
+  allPosts: any; // TODO: Especificar tipos
   preview: boolean;
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({ allPosts, preview }) => {
-  console.log(allPosts)
   if (preview) {
     return (
       <PreviewSuspense fallback="Loading...">
