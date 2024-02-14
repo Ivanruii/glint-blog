@@ -8,6 +8,7 @@ export const SiteHeader: React.FC = () => {
             <div className="container flex items-center justify-between max-w-[120ch] mx-auto h-14">
                 <div className="flex gap-4">
                     <Link href={`#`} className="flex items-center gap-3">
+                        <img src="/favicon/safari-pinned-tab.svg" alt="" width={50} />
                         <span className="font-bold">Glint Blog</span>
                     </Link>
                     <nav className="flex items-center gap-6 text-sm">

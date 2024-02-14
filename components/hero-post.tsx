@@ -33,9 +33,9 @@ export const HeroPost: React.FC<HeroPostProps> = ({
   slug,
 }) => {
   return (
-    <Card className="flex items-center p-5">
+    <Card className="p-5">
       <div className="flex-grow pr-4">
-        <div className="mb-20 md:mb-28">
+        <div className="mb-20 md:mb-14">
           <div className="flex flex-col h-full">
             <div className="flex items-center justify-between">
               <h3 className="mb-4 text-4xl leading-tight lg:text-6xl">
@@ -44,17 +44,17 @@ export const HeroPost: React.FC<HeroPostProps> = ({
                 </Link>
               </h3>
               <div className="mb-4 text-lg">
-                <Date dateString={date} />
+                <CoverImage className="rounded-lg" slug={slug} title={title} image={coverImage} priority />
               </div>
             </div>
-            <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
+            <p className="text-lg leading-relaxed ">{excerpt}</p>
           </div>
         </div>
-        {author && <Avatar name={author.name} picture={author.picture} />}
+        <div className="flex items-center justify-between">
+          {author && <Avatar name={author.name} picture={author.picture} />}
+          <Date dateString={date} />
+        </div>
       </div>
-      <div className="pl-4 w-[50%]">
-        <CoverImage slug={slug} title={title} image={coverImage} priority />
-      </div>
-    </Card>
+    </Card >
   );
 };
