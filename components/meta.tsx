@@ -35,7 +35,7 @@ export const Meta: React.FC = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
+        content={`Glint Blog, blog especializado en desarrollo web, UX y accesibilidad.`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} key="ogImage" />
     </Head>

@@ -1,7 +1,6 @@
 import { createClient, ClientConfig } from "next-sanity";
 import { sanityConfig } from "./config";
 
-// Definimos el tipo de la configuración de cliente
 interface MyClientConfig extends ClientConfig {
   token?: string;
 }
@@ -15,9 +14,8 @@ export const previewClient = createClient({
   // As this client only exists on the server and the token is never shared with the browser, we don't risk escalating permissions to untrustworthy users
   token:
     process.env.SANITY_API_READ_TOKEN || process.env.SANITY_API_WRITE_TOKEN,
-} as MyClientConfig); // Aseguramos que previewClient sea de tipo MyClientConfig
+} as MyClientConfig);
 
-// Definimos el tipo de la función getClient
 type GetClientFunction = (preview: boolean) => typeof sanityClient | typeof previewClient;
 
 export const getClient: GetClientFunction = (preview) => (preview ? previewClient : sanityClient);
