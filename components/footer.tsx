@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
         <ul>
           <li className="p-2 text-center transition-all hover:text-teal-600"><Link href={`/`}>Posts</Link></li>
           <li className="p-2 text-center transition-all hover:text-teal-600"><Link href={`https://www.github.com/Ivanruii/glint-blog`}>Github</Link></li>
-          <li className="p-2 text-center transition-all hover:text-teal-600"><Link href={`/`}>Sobre el blog</Link></li>
+          <li className="p-2 text-center transition-all hover:text-teal-600"><Link href={`/about`}>Sobre el blog</Link></li>
           <li className="p-2 text-center transition-all hover:text-teal-600"><Link href={`/cookies`}>Politica de Cookies</Link></li>
         </ul>
       </div>
