@@ -48,6 +48,7 @@ export const SiteHeader: React.FC = () => {
                     <div className="p-4">
                         <Link href={`/about`} className="block transition-colors hover:text-foreground/80 text-foreground/60">Acerca del blog</Link>
                         <Link href={`/`} className="block transition-colors hover:text-foreground/80 text-foreground/60">Posts</Link>
+                        <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href={`/contact`}>Contacto</Link>
                     </div>
                 </div>
             )}
