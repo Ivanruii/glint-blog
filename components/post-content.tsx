@@ -52,7 +52,7 @@ const ContentComponents: PortableTextComponents = {
         checkmarks: ({ children }) => <ol className="m-auto text-lg">{children}</ol>,
     },
     listItem: {
-        bullet: ({ children }) => <li style={{ listStyleType: 'disclosure-closed' }}>{children}</li>,
+        bullet: ({ children }) => <li className="m-5" style={{ listStyleType: 'disc' }}>{children}</li>,
         number: ({ children }) => <li className="m-5" style={{ listStyleType: 'decimal' }}>{children}</li>,
 
         checkmarks: ({ children }) => <li>✅ {children}</li>,
