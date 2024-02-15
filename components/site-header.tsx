@@ -11,10 +11,10 @@ export const SiteHeader: React.FC = () => {
             <div className="container flex items-center justify-between max-w-[120ch] mx-auto h-14">
                 <div className="flex gap-4">
                     <Link href={`/`} className="flex items-center gap-3" style={{ position: "relative", right: "16px" }}>
-                        {theme == 'dark' ?
-                            <GlintLogo className="text-white" fill="white" width={50} />
-                            :
+                        {theme == 'light' ?
                             <GlintLogo className="text-black" fill="black" width={50} />
+                            :
+                            <GlintLogo className="text-white" fill="white" width={50} />
                         }
                         <span className="font-bold">Glint Blog</span>
                     </Link>
