@@ -3,6 +3,7 @@ import React from "react";
 import { Avatar, CoverImage, Date } from "./";
 import { Card } from "./ui/card";
 import { Separator } from "@/components/ui/separator"
+import { Badge } from "./ui/badge";
 
 interface HeroPostProps {
   title: string;
@@ -33,28 +34,31 @@ export const HeroPost: React.FC<HeroPostProps> = ({
   slug,
 }) => {
   return (
-    <Card className="p-5">
-      <div className="flex-grow pr-4">
-        <div className="mb-20 md:mb-14">
-          <div className="flex flex-col h-full">
-            <div className="flex items-center justify-between">
-              <h3 className="mb-4 text-4xl leading-tight lg:text-6xl">
-                <Link href={`/posts/${slug}`} className="hover:underline">
-                  {title}
-                </Link>
-              </h3>
-              <div className="mb-4 text-lg">
-                <CoverImage className="rounded-lg" slug={slug} title={title} image={coverImage} priority />
+    <>
+      <Card className="p-5">
+        <div className="flex-grow pr-4">
+          <div className="mb-20 md:mb-14">
+            <div className="flex flex-col h-full">
+              <Badge variant="secondary">Nuevo Post</Badge>
+              <div className="flex flex-col items-center justify-between md:flex-row">
+                <h3 className="mb-4 text-4xl leading-tight lg:text-6xl">
+                  <Link href={`/posts/${slug}`} className="hover:underline">
+                    {title}
+                  </Link>
+                </h3>
+                <div className="mb-4 text-lg">
+                  <CoverImage className="rounded-lg" slug={slug} title={title} image={coverImage} priority />
+                </div>
               </div>
+              <p className="text-lg leading-relaxed ">{excerpt}</p>
             </div>
-            <p className="text-lg leading-relaxed ">{excerpt}</p>
+          </div>
+          <div className="flex items-center justify-between">
+            {author && <Avatar name={author.name} picture={author.picture} />}
+            <Date dateString={date} />
           </div>
         </div>
-        <div className="flex items-center justify-between">
-          {author && <Avatar name={author.name} picture={author.picture} />}
-          <Date dateString={date} />
-        </div>
-      </div>
-    </Card >
+      </Card >
+    </>
   );
 };
