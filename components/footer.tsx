@@ -9,8 +9,8 @@ export const Footer: React.FC = () => {
       </div>
       <div className="flex justify-center p-5">
         <ul>
-          <li className="p-2 text-center transition-all hover:text-teal-600"><Link href={`/posts`}>Posts</Link></li>
-          <li className="p-2 text-center transition-all hover:text-teal-600"><Link href={`/about`}>Sobre el blog</Link></li>
+          <li className="p-2 text-center transition-all hover:text-teal-600"><Link href={`/`}>Posts</Link></li>
+          <li className="p-2 text-center transition-all hover:text-teal-600"><Link href={`/`}>Sobre el blog</Link></li>
           <li className="p-2 text-center transition-all hover:text-teal-600"><Link href={`/cookies`}>Politica de Cookies</Link></li>
         </ul>
       </div>
