@@ -5,7 +5,7 @@ import { GlintLogo } from "./icons/logo";
 import { useTheme } from "next-themes";
 
 export const SiteHeader: React.FC = () => {
-    const { theme, setTheme } = useTheme();
+    const { theme } = useTheme();
     return (
         <header className="m-auto sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container flex items-center justify-between max-w-[120ch] mx-auto h-14">
