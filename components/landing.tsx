@@ -1,4 +1,3 @@
-import Head from "next/head";
 import React from "react";
 import { Container, HeroPost, Intro, MoreStories } from "./";
 import { Layout } from "./layout";
@@ -14,9 +13,6 @@ export const Landing: React.FC<LandingProps> = ({ allPosts, preview }) => {
   return (
     <>
       <Layout preview={preview}>
-        <Head>
-          <title>{`Glint Blog`}</title>
-        </Head>
         <Container>
           <Intro />
           {heroPost && (

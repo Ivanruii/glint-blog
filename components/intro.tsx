@@ -4,10 +4,10 @@ export const Intro: React.FC = () => {
   return (
     <section className="flex flex-col my-16">
       <h1 className="text-6xl font-bold leading-tight tracking-tighter sm:text-8xl">
-        Glint Blog.
+        Glint Blog - Desarrollo Web, UX y Accesibilidad.
       </h1>
       <h2 className="mt-5 text-lg">
-        Blog especializado en desarrollo web, UX y accesibilidad.
+        Encuentra artículos y recursos para mejorar tus habilidades en estas áreas.
       </h2>
     </section>
   );
