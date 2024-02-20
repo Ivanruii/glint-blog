@@ -37,7 +37,7 @@ export const SiteHeader: React.FC = () => {
                 </div>
                 <div className="flex items-center">
                     <ModeToggle />
-                    <button className="ml-4 md:hidden" onClick={toggleMenu}>
+                    <button className="ml-4 md:hidden" onClick={toggleMenu} aria-label="Abrir menú">
                         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             {menuOpen ? (
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />

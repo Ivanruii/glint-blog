@@ -19,9 +19,6 @@ export const ContactPage: React.FC = ({ preview = false }: any) => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // Aquí puedes agregar la lógica para enviar el formulario, por ejemplo, una llamada a una API o enviar por correo electrónico
-        console.log(formData);
-        // Luego puedes reiniciar el formulario si lo deseas
         setFormData({
             name: "",
             email: "",

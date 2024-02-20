@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Header, Layout } from "./";
+import Link from "next/link";
 
 export const AboutPage: React.FC = ({ preview = false }: any) => {
     return (
@@ -24,7 +25,7 @@ export const AboutPage: React.FC = ({ preview = false }: any) => {
                     <section>
                         <h2 className="my-4 text-2xl font-bold">Contacto</h2>
                         <p>
-                            ¿Tienes alguna pregunta, sugerencia o simplemente quieres decir hola? ¡Me encantaría saber de ti! Puedes contactarme enviando un correo electrónico a: ivr.644@gmail.com
+                            ¿Tienes alguna pregunta, sugerencia o simplemente quieres decir hola? ¡Me encantaría saber de ti! Puedes contactarme a través de la <Link href={'/contact'} className="font-bold transition-all text-zinc-600 hover:text-black">página de contacto</Link>.
                         </p>
                     </section>
                 </article>

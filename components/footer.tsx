@@ -3,7 +3,7 @@ import React from "react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="py-4 text-sm text-gray-600 border-t">
+    <footer className="py-4 text-sm text-gray-600 border-t dark:text-gray-400">
       <div className="container mx-auto">
         <p className="text-center">&copy; Glint Blog - 2024</p>
       </div>
