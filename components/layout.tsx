@@ -1,7 +1,8 @@
+import { Toaster } from "@/components/ui/sonner";
 import React from "react";
-import { Alert, Footer, Meta } from "./";
-import { ThemeProvider } from "./theme-provider";
+import { Footer, Meta } from "./";
 import { SiteHeader } from "./site-header";
+import { ThemeProvider } from "./theme-provider";
 
 interface LayoutProps {
   preview: boolean;
@@ -24,6 +25,7 @@ export const Layout: React.FC<LayoutProps> = ({ preview, children }) => {
           <div className="flex flex-col m-auto max-w-[120ch]">
             {children}
           </div>
+          <Toaster />
           <Footer />
         </div>
       </ThemeProvider>
