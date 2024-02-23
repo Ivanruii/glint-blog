@@ -1,12 +1,12 @@
 import React from 'react';
 
-export const GlintLogo = ({ color, ...props }) => {
+export const GlintLogo = ({ ...props }) => {
     return (
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
             width="50" viewBox="0 0 500.000000 500.000000"
             preserveAspectRatio="xMidYMid meet">
             <g transform="translate(0.000000,500.000000) scale(0.10000,-0.100000)"
-                fill={color} stroke="none"  {...props}>
+                stroke="none"  {...props}>
                 <path d="M2380 4193 c-405 -38 -805 -220 -1086 -494 -275 -269 -455 -622 -504
                         -989 -14 -106 -15 -351 0 -450 54 -374 225 -716 490 -980 245 -244 582 -422
                         931 -492 94 -18 146 -22 299 -22 242 0 355 21 585 106 501 185 866 551 1050

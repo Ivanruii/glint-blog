@@ -2,20 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { ModeToggle } from "./toogle-theme";
 import { GlintLogo } from "./icons/logo";
-import { useTheme } from "next-themes";
 
 export const SiteHeader: React.FC = () => {
-    const { theme } = useTheme();
     const [menuOpen, setMenuOpen] = React.useState(false);
-    const [logoFill, setLogoFill] = React.useState<"white" | "black">();
-
-    React.useEffect(() => {
-        if (theme === "dark") {
-            setLogoFill("white");
-        } else if (theme === "light") {
-            setLogoFill("black");
-        }
-    }, [theme]);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -26,7 +15,7 @@ export const SiteHeader: React.FC = () => {
             <div className="container flex items-center justify-between max-w-[120ch] mx-auto h-14">
                 <div className="flex items-center gap-4">
                     <Link href={`/`} className="flex items-center gap-3" style={{ position: "relative", right: "16px" }}>
-                        <GlintLogo color={logoFill} width={50} />
+                        <GlintLogo className="dark:fill-white" width={50} />
                         <span className="font-bold">Glint Blog</span>
                     </Link>
                     <nav className="items-center hidden gap-6 text-sm md:flex">
