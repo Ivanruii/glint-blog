@@ -1,5 +1,3 @@
-import React from "react";
-
 interface PostTitleProps {
   children: React.ReactNode;
 }

@@ -1,8 +1,8 @@
 import cn from "classnames";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { urlForImage } from "../lib/sanity";
+import { AnimatedLink } from "./animated-link";
 
 interface CoverImageProps {
   title: string;
@@ -13,7 +13,7 @@ interface CoverImageProps {
     };
   };
   priority: boolean | undefined;
-  className?: string; // Nueva propiedad para las clases adicionales
+  className?: string;
 }
 
 export const CoverImage: React.FC<CoverImageProps> = ({
@@ -21,7 +21,7 @@ export const CoverImage: React.FC<CoverImageProps> = ({
   slug,
   image: source,
   priority,
-  className, // Agregar className a las props
+  className,
 }) => {
   const imageClasses = cn(
     "w-full h-auto shadow-small shadow-slate-300",
@@ -47,9 +47,9 @@ export const CoverImage: React.FC<CoverImageProps> = ({
   return (
     <div className="bg-transparent sm:mx-0">
       {slug ? (
-        <Link href={`/posts/${slug}`} aria-label={title}>
+        <AnimatedLink href={`/posts/${slug}`} aria-label={title}>
           {image}
-        </Link>
+        </AnimatedLink>
       ) : (
         image
       )}

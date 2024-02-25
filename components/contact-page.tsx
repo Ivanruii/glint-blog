@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
+import React from "react";
+import { toast } from "sonner";
 import { Container, Header, Layout } from "./";
+import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { toast } from "sonner";
-import { Alert, AlertDescription, AlertTitle } from "./ui/alert";
-import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
 
 export const ContactPage: React.FC = ({ preview = false }: any) => {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = React.useState({
         name: "",
         email: "",
         message: ""

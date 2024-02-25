@@ -1,10 +1,11 @@
-import React from "react";
 import { indexQuery } from "@/lib/queries";
 import { usePreview } from "@/lib/sanity";
+import { AllPost } from "@/types/types";
+import React from "react";
 import { Landing } from "./";
 
 interface LandingPreviewProps {
-  allPosts: any; // TODO: Especificar tipos
+  allPosts: AllPost[]; // TODO: Especificar tipos
 }
 
 const LandingPreview: React.FC<LandingPreviewProps> = ({ allPosts }) => {

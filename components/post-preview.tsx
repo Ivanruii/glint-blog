@@ -1,4 +1,3 @@
-import React from "react";
 import { postQuery } from "../lib/queries";
 import { usePreview } from "../lib/sanity";
 import { Post } from "./";

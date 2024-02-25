@@ -19,6 +19,7 @@
     "@sanity/cli": "^3.27.0",
     "@sanity/image-url": "^1.0.2",
     "@sanity/webhook": "^2.0.0",
+    "@types/dom-view-transitions": "^1.0.4",
     "class-variance-authority": "^0.7.0",
     "classnames": "^2.3.1",
     "clsx": "^2.1.0",

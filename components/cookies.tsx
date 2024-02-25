@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { CookieIcon } from "@radix-ui/react-icons";
-import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "./ui/card";
-import { Separator } from "./ui/separator";
+import { CookieIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { Button } from "./ui/button";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "./ui/card";
 
 interface CookieConsentProps {
     demo?: boolean;
@@ -12,7 +11,7 @@ interface CookieConsentProps {
     onDeclineCallback?: () => void;
 }
 
-export default function CookieConsent({ demo = false, onAcceptCallback = () => { }, onDeclineCallback = () => { } }: CookieConsentProps): JSX.Element {
+export const CookieConsent: React.FC<CookieConsentProps> = ({ demo = false, onAcceptCallback = () => { }, onDeclineCallback = () => { } }): JSX.Element => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [hide, setHide] = useState<boolean>(false);
 

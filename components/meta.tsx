@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import { HOME_OG_IMAGE_URL } from "../lib/constants";
 
@@ -36,9 +35,10 @@ export const Meta: React.FC = () => {
       <meta name="twitter:image" content={HOME_OG_IMAGE_URL} />
 
       {/* Favicon y Apple Touch Icon */}
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image" href="/favicon/favicon.ico" sizes="any" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
 
       {/* Otros */}
       <link rel="canonical" href="https://glint-blog.com" />

@@ -1,5 +1,5 @@
 import { format, parseISO } from "date-fns";
-import { es } from 'date-fns/locale'
+import { es } from 'date-fns/locale';
 
 import React from "react";
 

@@ -1,6 +1,6 @@
-import React from "react";
 import Link from "next/link";
-import { ModeToggle } from "./toogle-theme";
+import React from "react";
+import { ModeToggle } from "./";
 import { GlintLogo } from "./icons/logo";
 
 export const SiteHeader: React.FC = () => {
@@ -17,11 +17,11 @@ export const SiteHeader: React.FC = () => {
                     <Link href={`/`} className="flex items-center gap-3" style={{ position: "relative", right: "16px" }}>
                         <GlintLogo className="dark:fill-white" width={50} />
                         <span className="font-bold">Glint Blog</span>
-                    </Link>
+                    </Link >
                     <nav className="items-center hidden gap-6 text-sm md:flex">
-                        <Link href={`/about`} className="transition-colors hover:text-foreground/80 text-foreground/60">About</Link>
-                        <Link href={`/`} className="transition-colors hover:text-foreground/80 text-foreground/60">Posts</Link>
-                        <Link href={`/contact`} className="transition-colors hover:text-foreground/80 text-foreground/60">Contacto</Link>
+                        <Link href={`/about`} className="transition-colors hover:text-foreground/80 text-foreground/60">About</Link >
+                        <Link href={`/`} className="transition-colors hover:text-foreground/80 text-foreground/60">Posts</Link >
+                        <Link href={`/contact`} className="transition-colors hover:text-foreground/80 text-foreground/60">Contacto</Link >
                     </nav>
                 </div>
                 <div className="flex items-center">
@@ -40,9 +40,9 @@ export const SiteHeader: React.FC = () => {
             {menuOpen && (
                 <div className="md:hidden">
                     <div className="p-4">
-                        <Link href={`/about`} className="block transition-colors hover:text-foreground/80 text-foreground/60">Acerca del blog</Link>
-                        <Link href={`/`} className="block transition-colors hover:text-foreground/80 text-foreground/60">Posts</Link>
-                        <Link href={`/contact`} className="block transition-colors hover:text-foreground/80 text-foreground/60">Contacto</Link>
+                        <Link href={`/about`} className="block transition-colors hover:text-foreground/80 text-foreground/60">Acerca del blog</Link >
+                        <Link href={`/`} className="block transition-colors hover:text-foreground/80 text-foreground/60">Posts</Link >
+                        <Link href={`/contact`} className="block transition-colors hover:text-foreground/80 text-foreground/60">Contacto</Link >
                     </div>
                 </div>
             )}

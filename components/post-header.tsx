@@ -1,4 +1,3 @@
-import React from "react";
 import { Avatar, CoverImage, Date, PostTitle } from "./";
 
 interface PostHeaderProps {

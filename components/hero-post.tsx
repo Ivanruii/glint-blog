@@ -1,9 +1,7 @@
-import Link from "next/link";
 import React from "react";
-import { Avatar, CoverImage, Date } from "./";
-import { Card } from "./ui/card";
-import { Separator } from "@/components/ui/separator"
+import { AnimatedLink, Avatar, CoverImage, Date } from "./";
 import { Badge } from "./ui/badge";
+import { Card } from "./ui/card";
 
 interface HeroPostProps {
   title: string;
@@ -42,9 +40,9 @@ export const HeroPost: React.FC<HeroPostProps> = ({
               <Badge variant="secondary">Nuevo Post</Badge>
               <div className="flex flex-col items-center justify-between md:flex-row">
                 <h3 className="mb-4 text-4xl leading-tight lg:text-6xl">
-                  <Link href={`/posts/${slug}`} className="hover:underline">
+                  <AnimatedLink href={`/posts/${slug}`} className="hover:underline">
                     {title}
-                  </Link>
+                  </AnimatedLink>
                 </h3>
                 <div className="mb-4 text-lg">
                   <CoverImage className="rounded-lg" slug={slug} title={title} image={coverImage} priority />

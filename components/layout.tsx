@@ -1,8 +1,6 @@
 import { Toaster } from "@/components/ui/sonner";
 import React from "react";
-import { Footer, Meta } from "./";
-import { SiteHeader } from "./site-header";
-import { ThemeProvider } from "./theme-provider";
+import { Footer, Meta, SiteHeader, ThemeProvider } from "./";
 
 interface LayoutProps {
   preview: boolean;

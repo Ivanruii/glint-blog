@@ -1,6 +1,10 @@
 export * from './alert';
+export * from './animated-link';
 export * from './avatar';
+export * from './contact-page';
 export * from './container';
+export * from './cookies';
+export * from './cookies-politics';
 export * from './cover-image';
 export * from './date';
 export * from './footer';
@@ -13,9 +17,15 @@ export * from './layout';
 export * from './meta';
 export * from './more-stories';
 export * from './post';
+export * from './post-content'
 export * from './post-body';
 export * from './post-header';
 export * from './post-plug';
 export * from './post-preview';
 export * from './post-title';
+export * from './scroll-progress-bar';
 export * from './section-separator';
+export * from './site-header';
+export * from './theme-provider';
+export * from './toogle-theme';
+

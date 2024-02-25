@@ -1,7 +1,6 @@
 import ErrorPage from "next/error";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import React from "react";
 import { CMS_NAME } from "../lib/constants";
 import { urlForImage } from "../lib/sanity";
 import { Container, Header, Layout, MoreStories, PostBody, PostHeader, PostTitle, SectionSeparator } from "./";

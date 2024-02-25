@@ -1,6 +1,5 @@
-import Link from "next/link";
-import React from "react";
-import { CoverImage, Date } from "./";
+import { CoverImage } from "./";
+import { AnimatedLink } from "./animated-link";
 import { Badge } from "./ui/badge";
 import { Card } from "./ui/card";
 export interface PostPlugProps {
@@ -38,9 +37,9 @@ export const PostPlug: React.FC<PostPlugProps> = ({
       <div className="flex flex-col p-4">
         <div className="flex items-center justify-between">
           <h3 className="mb-4 text-2xl font-bold leading-snug">
-            <Link href={`/posts/${slug}`} className="hover:underline">
+            <AnimatedLink href={`/posts/${slug}`} className="hover:underline">
               {title}
-            </Link>
+            </AnimatedLink>
           </h3>
           {/* <div className="text-md">
             <Date dateString={date} />
