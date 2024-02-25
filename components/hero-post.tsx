@@ -40,7 +40,7 @@ export const HeroPost: React.FC<HeroPostProps> = ({
               <Badge variant="secondary">Nuevo Post</Badge>
               <div className="flex flex-col items-center justify-between md:flex-row">
                 <h3 className="mb-4 text-4xl leading-tight lg:text-6xl">
-                  <AnimatedLink href={`/posts/${slug}`} className="hover:underline">
+                  <AnimatedLink href={`/posts/${slug}`} className="font-semibold hover:underline">
                     {title}
                   </AnimatedLink>
                 </h3>
