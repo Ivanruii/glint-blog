@@ -8,6 +8,7 @@ import { Container, Header, Layout, MoreStories, PostBody, PostHeader, PostTitle
 export interface PostProps {
   data?: {
     post: {
+      excerpt: string;
       slug: string;
       title: string;
       coverImage: {
