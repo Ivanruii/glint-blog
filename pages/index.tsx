@@ -4,9 +4,6 @@ import { PreviewSuspense } from "next-sanity/preview";
 import { lazy, Suspense } from "react";
 import { Landing } from "../components/landing";
 import React from "react";
-import { inject } from "@vercel/analytics";
-
-inject({ mode: "production" });
 
 const LandingPreview = lazy(() => import("../components/landing-preview"));
 
