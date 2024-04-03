@@ -1,4 +1,5 @@
 # Glint Blog
+
 Blog specialized in web development, UX and accessibility.
 
 Based on [https://github.com/vercel/next.js/tree/canary/examples/cms-sanity](https://github.com/vercel/next.js/tree/canary/examples/cms-sanity)

@@ -1,4 +1,4 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function exit(_: NextApiRequest, res: NextApiResponse) {
   // Exit Draft Mode by removing the cookie

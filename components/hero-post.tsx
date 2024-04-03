@@ -40,12 +40,21 @@ export const HeroPost: React.FC<HeroPostProps> = ({
               <Badge variant="secondary">Nuevo Post</Badge>
               <div className="flex flex-col items-center justify-between md:flex-row">
                 <h3 className="mb-4 text-4xl leading-tight lg:text-6xl">
-                  <AnimatedLink href={`/posts/${slug}`} className="font-semibold hover:underline">
+                  <AnimatedLink
+                    href={`/posts/${slug}`}
+                    className="font-semibold hover:underline"
+                  >
                     {title}
                   </AnimatedLink>
                 </h3>
                 <div className="mb-4 text-lg">
-                  <CoverImage className="rounded-lg" slug={slug} title={title} image={coverImage} priority />
+                  <CoverImage
+                    className="rounded-lg"
+                    slug={slug}
+                    title={title}
+                    image={coverImage}
+                    priority
+                  />
                 </div>
               </div>
               <p className="text-lg leading-relaxed ">{excerpt}</p>
@@ -56,7 +65,7 @@ export const HeroPost: React.FC<HeroPostProps> = ({
             <Date dateString={date} />
           </div>
         </div>
-      </Card >
+      </Card>
     </>
   );
 };

@@ -1,18 +1,18 @@
-import React from 'react';
-import { useRouter } from 'next/router';
+import React from "react";
+import { useRouter } from "next/router";
 
 const RedirectPage: React.FC = () => {
-    const router = useRouter();
+  const router = useRouter();
 
-    React.useEffect(() => {
-        const redirectTimer = setTimeout(() => {
-            router.push('https://glint-blog.sanity.studio/');
-        }, 2000);
+  React.useEffect(() => {
+    const redirectTimer = setTimeout(() => {
+      router.push("https://glint-blog.sanity.studio/");
+    }, 2000);
 
-        return () => clearTimeout(redirectTimer);
-    }, []);
+    return () => clearTimeout(redirectTimer);
+  }, []);
 
-    return <div>Redirigiendo...</div>;
+  return <div>Redirigiendo...</div>;
 };
 
 export default RedirectPage;

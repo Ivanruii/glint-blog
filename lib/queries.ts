@@ -40,4 +40,4 @@ export const postSlugsQuery: string = `
 export const postBySlugQuery: string = `
 *[_type == "post" && slug.current == $slug][0] {
   ${postFields}
-}`
+}`;

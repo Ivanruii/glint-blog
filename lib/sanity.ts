@@ -9,7 +9,6 @@ interface urlForImageProps {
   };
 }
 
-
 export const urlForImage = (source: urlForImageProps) =>
   imageBuilder.image(source).auto("format").fit("max");
 

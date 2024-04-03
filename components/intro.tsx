@@ -7,7 +7,8 @@ export const Intro: React.FC = () => {
         Glint Blog - Desarrollo Web, UX y Accesibilidad.
       </h1>
       <h2 className="mt-5 text-lg">
-        Encuentra artículos y recursos para mejorar tus habilidades en estas áreas.
+        Encuentra artículos y recursos para mejorar tus habilidades en estas
+        áreas.
       </h2>
     </section>
   );

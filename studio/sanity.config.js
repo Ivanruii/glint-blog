@@ -8,9 +8,7 @@ import { author } from "./schemas/author";
 import { post } from "./schemas/post";
 import { categories } from "./schemas/categories";
 
-const title =
-  import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE ||
-  "Glint Blog";
+const title = import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE || "Glint Blog";
 const projectId = import.meta.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 const dataset = import.meta.env.NEXT_PUBLIC_SANITY_DATASET;
 

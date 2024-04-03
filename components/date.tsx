@@ -1,5 +1,5 @@
 import { format, parseISO } from "date-fns";
-import { es } from 'date-fns/locale';
+import { es } from "date-fns/locale";
 
 import React from "react";
 
@@ -12,6 +12,7 @@ export const Date: React.FC<DateProps> = ({ dateString }) => {
 
   const date = parseISO(dateString);
   const formattedDate = format(date, "LLLL d, yyyy", { locale: es });
-  const capitalizedFormattedDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
+  const capitalizedFormattedDate =
+    formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
   return <time dateTime={dateString}>{capitalizedFormattedDate}</time>;
 };

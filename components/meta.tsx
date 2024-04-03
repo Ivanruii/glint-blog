@@ -43,7 +43,9 @@ export const Meta: React.FC<MetaProps> = ({
   og = { type: "website", image: HOME_OG_IMAGE_URL },
   viewport = "width=device-width, initial-scale=1",
 }) => {
-  const description = propDescription || "Glint Blog es un espacio especializado en desarrollo web, UX y accesibilidad. Encuentra artículos y recursos para mejorar tus habilidades en estas áreas.";
+  const description =
+    propDescription ||
+    "Glint Blog es un espacio especializado en desarrollo web, UX y accesibilidad. Encuentra artículos y recursos para mejorar tus habilidades en estas áreas.";
 
   return (
     <Head>
@@ -61,18 +63,38 @@ export const Meta: React.FC<MetaProps> = ({
       <meta property="og:site_name" content={og.site_name || undefined} />
 
       {/* Twitter Meta Tags */}
-      <meta name="twitter:card" content={twitter.card || "summary_large_image"} />
+      <meta
+        name="twitter:card"
+        content={twitter.card || "summary_large_image"}
+      />
       <meta name="twitter:title" content={twitter.title || title} />
-      <meta name="twitter:description" content={twitter.description || description} />
+      <meta
+        name="twitter:description"
+        content={twitter.description || description}
+      />
       <meta name="twitter:image" content={twitter.image || image} />
       <meta name="twitter:site" content={twitter.site || undefined} />
       <meta name="twitter:creator" content={twitter.creator || undefined} />
 
       {/* Favicon y Apple Touch Icon */}
       <link rel="icon" type="image" href="/favicon/favicon.ico" sizes="any" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon/favicon-16x16.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/favicon/apple-touch-icon.png"
+      />
 
       {/* Others */}
       <link rel="canonical" href={url} />

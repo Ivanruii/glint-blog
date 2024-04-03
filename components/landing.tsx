@@ -1,6 +1,13 @@
 import { AllPost } from "@/types/types";
 import React from "react";
-import { Container, CookieConsent, HeroPost, Intro, Layout, MoreStories } from "./";
+import {
+  Container,
+  CookieConsent,
+  HeroPost,
+  Intro,
+  Layout,
+  MoreStories,
+} from "./";
 
 interface LandingProps {
   allPosts: AllPost[];

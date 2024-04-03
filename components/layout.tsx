@@ -20,9 +20,7 @@ export const Layout: React.FC<LayoutProps> = ({ preview, children }) => {
         <div className="min-h-screen">
           {/* <Alert preview={preview} /> */}
           <SiteHeader />
-          <div className="flex flex-col m-auto max-w-[120ch]">
-            {children}
-          </div>
+          <div className="flex flex-col m-auto max-w-[120ch]">{children}</div>
           <Toaster />
           <Footer />
         </div>

@@ -19,7 +19,7 @@ export interface PostPlugProps {
       };
     };
   };
-  categories: string[],
+  categories: string[];
   slug: string;
 }
 
@@ -29,11 +29,17 @@ export const PostPlug: React.FC<PostPlugProps> = ({
   date,
   excerpt,
   slug,
-  categories
+  categories,
 }) => {
   return (
     <Card>
-      <CoverImage className="rounded-t-xl" slug={slug} title={title} image={coverImage} priority={undefined} />
+      <CoverImage
+        className="rounded-t-xl"
+        slug={slug}
+        title={title}
+        image={coverImage}
+        priority={undefined}
+      />
       <div className="flex flex-col p-4">
         <div className="flex items-center justify-between">
           <h3 className="mb-4 text-2xl font-bold leading-snug">
@@ -47,9 +53,10 @@ export const PostPlug: React.FC<PostPlugProps> = ({
         </div>
         <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
         <div className="flex gap-4">
-          {categories && categories.map((category, index) => (
-            <Badge key={index}>{category}</Badge>
-          ))}
+          {categories &&
+            categories.map((category, index) => (
+              <Badge key={index}>{category}</Badge>
+            ))}
         </div>
       </div>
     </Card>

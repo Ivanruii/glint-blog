@@ -16,9 +16,12 @@ export const previewClient = createClient({
     process.env.SANITY_API_READ_TOKEN || process.env.SANITY_API_WRITE_TOKEN,
 } as MyClientConfig);
 
-type GetClientFunction = (preview: boolean) => typeof sanityClient | typeof previewClient;
+type GetClientFunction = (
+  preview: boolean
+) => typeof sanityClient | typeof previewClient;
 
-export const getClient: GetClientFunction = (preview) => (preview ? previewClient : sanityClient);
+export const getClient: GetClientFunction = (preview) =>
+  preview ? previewClient : sanityClient;
 
 export function overlayDrafts(docs: any[]) {
   const documents = docs || [];

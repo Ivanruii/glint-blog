@@ -28,7 +28,11 @@ const IndexPage: React.FC<IndexPageProps> = ({ allPosts, preview }) => {
 
 export default IndexPage;
 
-export async function getStaticProps({ preview = false }: { preview?: boolean }) {
+export async function getStaticProps({
+  preview = false,
+}: {
+  preview?: boolean;
+}) {
   const allPosts = overlayDrafts(await getClient(preview).fetch(indexQuery));
   return {
     props: { allPosts, preview },

@@ -2,7 +2,11 @@ import { lazy, Suspense } from "react";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { PreviewSuspense } from "next-sanity/preview";
 import { postQuery, postSlugsQuery } from "../../lib/queries";
-import { getClient, overlayDrafts, sanityClient } from "../../lib/sanity.server";
+import {
+  getClient,
+  overlayDrafts,
+  sanityClient,
+} from "../../lib/sanity.server";
 import { Post, PostProps } from "../../components/post";
 import { Meta, MetaProps } from "../../components/meta";
 import React from "react";
@@ -36,7 +40,10 @@ const PostPage: NextPage<PostProps> = ({ preview, data }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps<PostProps> = async ({ params, preview = false }) => {
+export const getStaticProps: GetStaticProps<PostProps> = async ({
+  params,
+  preview = false,
+}) => {
   const { post, morePosts } = await getClient(preview).fetch(postQuery, {
     slug: params?.slug,
   });
