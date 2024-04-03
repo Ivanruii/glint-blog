@@ -1,8 +1,7 @@
 import { Head, Html, Main, NextScript } from "next/document";
 import React from "react";
-import { Analytics } from "@vercel/analytics/react"
 
-interface DocumentProps { }
+interface DocumentProps {}
 
 const MyDocument: React.FC<DocumentProps> = () => {
   return (
@@ -11,9 +10,8 @@ const MyDocument: React.FC<DocumentProps> = () => {
       <body>
         <Main />
         <NextScript />
-        <Analytics />
       </body>
-    </Html >
+    </Html>
   );
 };
 
