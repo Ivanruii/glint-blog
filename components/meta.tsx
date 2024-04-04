@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import { HOME_OG_IMAGE_URL } from "../lib/constants";
 
 export interface MetaProps {
   title?: string;
@@ -35,12 +34,12 @@ export interface MetaProps {
 export const Meta: React.FC<MetaProps> = ({
   title = "Glint Blog - Desarrollo Web, UX y Accesibilidad",
   description: propDescription,
-  image = "/og-image.png",
+  image = "/favicon/og-image.png",
   url = "https://glint-blog.com",
   keywords = "desarrollo web, UX, accesibilidad, programación, diseño web, experiencia de usuario, desarrollo frontend, desarrollo backend, UX",
   author = "Iván Ruiz",
   twitter = { card: "summary_large_image" },
-  og = { type: "website", image: "/og-image.png" },
+  og = { type: "website", image: "/favicon/og-image.png" },
   viewport = "width=device-width, initial-scale=1",
 }) => {
   const description =
